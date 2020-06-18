@@ -95,6 +95,7 @@ class HibernateUtils {
      * @param cls the class of which fix the property getter
      */
     static void fixupClassPropertyFetcher(Class cls) {
+        /*
         ClassPropertyFetcher cpf = ClassPropertyFetcher.forClass(cls)
         Map<String, ClassPropertyFetcher.PropertyFetcher> instanceFetchers = cpf.instanceFetchers
 
@@ -105,6 +106,7 @@ class HibernateUtils {
         toFix.each {
             instanceFetchers[it.substring(3)] = instanceFetchers.remove(it)
         }
+        */
     }
 
     static class NativeSQLQueryDetails {

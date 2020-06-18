@@ -57,6 +57,7 @@ abstract class AbstractI2b2Metadata extends AbstractQuerySpecifyingType
     static transients = [ 'synonym', 'metadata', 'tableCode' ]
 
     static mapping = {
+        autowire true
         fullName           column: 'C_FULLNAME'
         level              column: 'C_HLEVEL'
         name               column: 'C_NAME'
